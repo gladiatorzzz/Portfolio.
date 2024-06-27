@@ -49,12 +49,12 @@ section {
 
 .skill-bar {
     background-color: #f0f0f0;
-    width: 100%; /* Full width by default */
-    max-width: 500px; /* Limit the maximum width */
+    width: 100%; 
+    max-width: 500px; 
     height: 20px;
     border-radius: 8px;
     margin-bottom: 10px;
-    overflow: hidden; /* Ensure content doesn't overflow */
+    overflow: hidden; 
 }
 
 .skill-level {
@@ -63,12 +63,12 @@ section {
     border-radius: 8px;
     color: white;
     text-align: center;
-    line-height: 20px; /* Should match height for vertical centering */
-    width: 0; /* Start width at 0 for animation */
-    transition: width 2s ease; /* Add transition for smooth animation */
+    line-height: 20px; 
+    width: 0; 
+    transition: width 2s ease; 
 }
 
-/* Animation trigger */
+
 .skill-bar.animate .skill-level {
     width: var(--skill-level);
 }
