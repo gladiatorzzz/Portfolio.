@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #000000;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #72d0d5;
+    border-radius: 8px;
+}
+
+#profile-pic {
+    width: 165px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    background-color: #f0f0f0;
+    width: 100%; /* Full width by default */
+    max-width: 500px; /* Limit the maximum width */
+    height: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.skill-level {
+    background-color: #08090b;
+    height: 100%;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    line-height: 20px; /* Should match height for vertical centering */
+    width: 0; /* Start width at 0 for animation */
+    transition: width 2s ease; /* Add transition for smooth animation */
+}
+
+/* Animation trigger */
+.skill-bar.animate .skill-level {
+    width: var(--skill-level);
+}
+
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #080707;
+    color: white;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
